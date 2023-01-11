@@ -1,0 +1,99 @@
+[versions]
+gradleVersion = "7.3.1"
+kotlinVersion = "1.7.20"
+lifecycleVersion = "2.5.1"
+composeVersion = "1.3.0"
+navigationVersion = "2.3.2"
+coroutinesVersion = "1.6.4"
+hiltVersion = "2.44"
+glideVersion = "4.14.2"
+okhttpVersion = "4.9.1"
+retrofitVersion = "2.9.0"
+refreshVersion = "2.0.5"
+immersionbarVersion = "3.2.2"
+
+[libraries]
+#BuildTool
+android-build-tools-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "gradleVersion" }
+#Kotlin
+jetbrains-kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlinVersion" }
+jetbrains-kotlin-jdk7 = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib-jdk7", version.ref = "kotlinVersion" }
+jetbrains-kotlin-collections = { group = "org.jetbrains.kotlinx", name = "kotlinx-collections-immutable", version = "0.3.5" }
+#Androidx
+androidx-databinding-runtime = { group = "androidx.databinding", name = "databinding-runtime", version.ref = "gradleVersion" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version = "1.9.0" }
+androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version = "1.0.0-beta02" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version = "1.6.1" }
+androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version = "1.5.4" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version = "1.5.1" }
+androidx-preference = { group = "androidx.preference", name = "preference", version = "1.2.0" }
+androidx-swiperefreshlayout = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version = "1.1.0" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version = "2.1.4" }
+androidx-multidex = { group = "androidx.multidex", name = "multidex", version = "2.0.1" }
+androidx-viewpager2 = { group = "androidx.viewpager2", name = "viewpager2", version = "1.0.0" }
+androidx-datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version = "1.0.0" }
+androidx-profileinstaller = { group = "androidx.profileinstaller", name = "profileinstaller", version = "1.2.0-beta02" }
+#Lifecycle
+androidx-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycleVersion" }
+androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleVersion" }
+androidx-lifecycle-common-java8 = { group = "androidx.lifecycle", name = "lifecycle-common-java8", version.ref = "lifecycleVersion" }
+#Compose
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version = "2022.10.00" }
+androidx-compose-material = { group = "androidx.compose.material", name = "material", version.ref = "composeVersion" }
+androidx-compose-animation = { group = "androidx.compose.animation", name = "animation", version.ref = "composeVersion" }
+androidx-compose-ui-tool = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "composeVersion" }
+androidx-compose-ui-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "composeVersion" }
+androidx-compose-swiperefresh = { group = "com.google.accompanist", name = "accompanist-swiperefresh", version = "0.27.0" }
+#Navigation
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationVersion" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationVersion" }
+androidx-navigation-safe-args = { group = "androidx.navigation", name = "navigation-safe-args-gradle-plugin", version.ref = "navigationVersion" }
+#Google
+google-material = { group = "com.google.android.material", name = "material", version = "1.7.0" }
+google-gson = { group = "com.google.code.gson", name = "gson", version = "2.8.7" }
+#RxJava3
+rxjava3 = { group = "io.reactivex.rxjava3", name = "rxjava", version = "3.1.5" }
+rxandroid = { group = "io.reactivex.rxjava3", name = "rxandroid", version = "3.0.0" }
+#Coroutines
+coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutinesVersion" }
+coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutinesVersion" }
+coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutinesVersion" }
+#Hilt
+hilt-gradlePlugin = { group = "com.google.dagger", name = "hilt-android-gradle-plugin", version.ref = "hiltVersion" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltVersion" }
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hiltVersion" }
+hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hiltVersion" }
+#Glide
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glideVersion" }
+glide-compiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "glideVersion" }
+#Other
+eventbus = { group = "org.greenrobot", name = "eventbus", version = "3.3.1" }
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version = "2.2.2" }
+coil = { group = "io.coil-kt", name = "coil", version = "1.2.2" }
+recyclerview-adapter-helper = { group = "io.github.cymchad", name = "BaseRecyclerViewAdapterHelper", version = "3.0.10" }
+relinker = { group = "com.getkeepsafe.relinker", name = "relinker", version = "1.4.5" }
+mmkv = { group = "com.tencent", name = "mmkv", version = "1.2.14" }
+toast = { group = "com.github.getActivity", name = "ToastUtils", version = "10.3" }
+permissionx = { group = "com.guolindev.permissionx", name = "permissionx", version = "1.7.1" }
+pictureselector = { group = "io.github.lucksiege", name = "pictureselector", version = "v3.10.7" }
+autosize = { group = "com.github.JessYanCoding", name = "AndroidAutoSize", version = "v1.2.1" }
+
+loadsir = { group = "com.kingja.loadsir", name = "loadsir", version = "1.3.8" }
+refresh = { group = "io.github.scwang90", name = "refresh-layout-kernel", version.ref = "refreshVersion" }
+refresh-header = { group = "io.github.scwang90", name = "refresh-header-classics", version.ref = "refreshVersion" }
+refresh-footer = { group = "io.github.scwang90", name = "refresh-footer-classics", version.ref = "refreshVersion" }
+
+okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttpVersion" }
+okhttp3-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttpVersion" }
+retrofit2 = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofitVersion" }
+retrofit2-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofitVersion" }
+
+alipaysdk = { group = "com.alipay.sdk", name = "alipaysdk-android", version = "15.8.11" }
+
+immersionbar = { group = "com.geyifeng.immersionbar", name = "immersionbar", version.ref = "immersionbarVersion" }
+immersionbar-ktx = { group = "com.geyifeng.immersionbar", name = "immersionbar-ktx", version.ref = "immersionbarVersion" }
+immersionbar-components = { group = "com.geyifeng.immersionbar", name = "immersionbar-components", version.ref = "immersionbarVersion" }
+[bundles]
+networking = ["okhttp3", "okhttp3-interceptor", "retrofit2", "retrofit2-gson"]
+pageLoad = ["loadsir","refresh","refresh-footer"] #,"refresh-header"
+immersionbar = ["immersionbar","immersionbar-ktx","immersionbar-components"]

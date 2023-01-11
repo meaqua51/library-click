@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
+android {
+
+    namespace 'com.weijun.plugin.click.lib'
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 23
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+}
+
+def versionName = "1.0.6"
+// Create a new release：https://github.com/meaqua51/MeaquaPluginWork/releases/new
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release         // 表示发布 release（jitpack 都不会使用到）
+                groupId = 'com.weijun.library' // 这个是依赖库的组 id
+                artifactId = 'click'       // 依赖库的名称（jitpack 都不会使用到）
+                version = versionName            //当前版本依赖库版本号，这个jitpack不会使用到，只是我们开发者自己查看
+            }
+        }
+    }
+}
